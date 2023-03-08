@@ -1,0 +1,27 @@
+.carousel-center{
+    text-align: -webkit-center;
+}
+
+.btn-edit-home{
+    border: 2px solid black;
+    color: black;
+    font-weight: 600;
+}
+
+.header-scrolled .d-flex .btn-edit-home{
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+}
+
+/* .social-icons{
+    padding: 0px; 
+} */
+
+.coming-soon-stories{
+    margin: 10rem 5rem;
+}
+
+.border_new {
+    width: 100%;
+}

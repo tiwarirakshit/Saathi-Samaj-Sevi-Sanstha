@@ -1,0 +1,116 @@
+#our-projects-title-left{
+    text-align-last: left;
+}
+
+.margin-zero{
+    margin: 3rem 0 0 0 !important;
+}
+
+#our-history-about-us{
+    margin-bottom: 4rem !important;
+}
+
+.values-parent-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.value{
+    font-size: xx-large;
+    width: 30%;
+}
+
+.value-description{
+    width: 40%;
+}
+
+.verticalLine {
+    height: 0.5rem;
+    width: 30%;
+    border-bottom: thick solid #ff0000;
+}
+
+div.vertical-line{
+    height: 2px;
+    width: 100%; /* Line width */
+    background-color: black; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: left; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+    margin-bottom: 2rem;
+  }
+
+.stats-common{
+    width: 25%;
+    text-align: -webkit-center;
+}
+
+.statistics-numbers-parent{
+    display: flex;
+    width: 100%;
+}
+
+.title-stats{
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+.title-description{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+    font-size: large;
+}
+
+.carousel-center{
+    text-align: -webkit-center;
+}
+
+.btn-edit-home{
+    border: 2px solid black;
+    color: black;
+    font-weight: 600;
+}
+
+.header-scrolled .d-flex .btn-edit-home{
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+}
+
+#bg-color-our-projects-title-box{
+    background-color: var(--bg-red) 
+}
+
+#view-gallery-btn-projects-page{
+    margin-top: 20vh !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .try_new {
+        display: none;
+    }
+
+    .try {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .try {
+        display: none;
+    }
+}
+
+/* extra large devices */
+@media only screen and (min-width: 1200px) {
+    .try {
+        display: none;
+    }
+}

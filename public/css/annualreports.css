@@ -1,0 +1,53 @@
+.btns-in-annual-reports{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+}
+
+#annual-reports-left{
+    justify-content: left !important;
+}
+
+.write-to-us-btn{
+    border: 3.5px solid var(--bg-red);
+    color: var(--bg-red);
+}
+
+#download-report-btn-annual-report-page{
+    background: var(--bg-red);
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.write-to-us-btn:hover{
+    background: var(--bg-red) !important;
+    color: var(--text-white) !important;
+}
+
+#annual-report-parent-section{
+    margin: 4rem 0rem 4rem 0rem !important;
+}
+
+#title-under-annual-report-parent-section{
+    margin: 2rem 0rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .write-to-us-btn {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .write-to-us-btn {
+            margin-left: 1rem;
+        }
+}
+
+/* extra large devices */
+@media only screen and (min-width: 1200px) {
+    .add_comment {
+        margin-left: 5rem;
+        /* margin-right: 2rem; */
+    }
+}

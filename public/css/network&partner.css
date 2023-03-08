@@ -1,0 +1,121 @@
+.margin-zero{
+    margin: 0 0 0 0 !important;
+    padding-top: 2rem;
+}
+
+#partnerships-network-partners{
+    margin-bottom: 4rem !important;
+}
+
+.values-parent-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.value{
+    font-size: xx-large;
+    width: 30%;
+}
+
+.value-description{
+    width: 40%;
+}
+
+.verticalLine {
+    height: 0.5rem;
+    width: 30%;
+    border-bottom: thick solid var(--text-red);
+}
+
+div.vertical-line{
+    height: 2px;
+    width: 100%; /* Line width */
+    background-color: black; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: left; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+    margin-bottom: 2rem;
+  }
+
+.stats-common{
+    width: 25%;
+    text-align: -webkit-center;
+}
+
+.statistics-numbers-parent{
+    display: flex;
+    width: 100%;
+}
+
+.title-stats{
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+.title-description{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-style: italic;
+    font-size: large;
+}
+
+.appr-header {
+    background-image: url(../img/f6.png);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
+    width: 100%;
+  }
+
+.appr-header h1 {
+    color: black;
+    text-align: center;
+    padding-top: 15rem;
+    font-size: xxx-large;
+    font-weight: 700;
+  }
+
+.see-our-projects-section{
+    text-align: center;
+    padding: 0rem 0 4em 0;
+}
+  
+.btn-in-projects-section-ourapproach{
+    padding: 0.5rem 7rem;
+    /* background: var(--bg-white); */
+    border: 3.5px solid var(--text-red);
+    color: var(--text-red);
+    font-weight: 600;
+    font-size: x-large;
+    font-style: var(--secondary-font);
+  }
+
+.btn-in-projects-section-ourapproach:hover{
+    color: var(--text-white) !important;
+    background: var(--bg-skin) !important;
+  }
+
+.parent-section-ourapproach{   
+    background:#faeec7;
+}
+
+.container-logo-section img{   
+    width:fit-content;
+    height: 10rem;
+}
+
+
+/* 
+@media only screen and (min-width: 768px) {
+    .try {
+        display: none;
+    }
+} */

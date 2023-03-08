@@ -1,0 +1,82 @@
+{{>dashboardNavbar}}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800"> Add blog </h1>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary"> Add blog</h6>
+                    {{#if err }}
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong> Error </strong>
+                        {{err}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {{/if}}
+                    {{#if msg }}
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong> success </strong>
+                        {{msg}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="card-body">
+                    <form action="/{{op}}?_csrf={{csrfToken}}" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                        <input type="hidden" name="id" value="{{blog._id}}">
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-9 control-label" for="textinput">Title</label>
+                            <div class="col-md-12">
+                                <input id="textinput" name="title" type="text" placeholder="Enter title"
+                                    class="form-control input-md" value="{{blog.title}}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-9 control-label">Description</label>
+                            <div class="col-md-12">
+                                <input id="textinput" name="description" type="text" placeholder="Enter description"
+                                    class="form-control input-md" value="{{blog.description}}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-9 control-label">Date</label>
+                            <div class="col-md-12">
+                                <input id="filebutton" name="file" class="input-file" type="file" value="{{blog.image}}"
+                                    accept="image/*">
+                                <img src="/uploads/{{blog.image}}" alt="image" width="80">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-9 control-label">Author</label>
+                            <div class="col-md-12">
+                                <input id="textinput" name="author" type="text" placeholder="Enter author"
+                                    class="form-control input-md" value="{{blog.author}}">
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <div class="col-md-9">
+                                <button id="singlebutton" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+
+{{>dashboardFooter}}

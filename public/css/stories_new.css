@@ -1,0 +1,133 @@
+.carousel-center {
+    text-align: -webkit-center;
+}
+
+.btn-edit-home {
+    border: 2px solid black;
+    color: black;
+    font-weight: 600;
+}
+
+.header-scrolled .d-flex .btn-edit-home {
+    border: 2px solid white;
+    color: white;
+    font-weight: 600;
+}
+
+/* .social-icons{
+    padding: 0px; 
+} */
+
+.coming-soon-stories {
+    margin: 10rem 5rem;
+}
+
+.border_new {
+    width: 100%!important;
+    border-color: #726f6f;
+
+
+}
+
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    display: block;
+    height: 6rem;
+    padding: 1.3rem 23px 1.5rem;
+    border: 0;
+    outline: none;
+    color: #3e3e3e;
+    font-family: "Open Sans",
+        sans-serif;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    max-width: 100%;
+    background-color: #efefef;
+    border: 1px solid transparent;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 4px;
+}
+
+.h-full-width {
+    width: 50%;
+}
+
+input,
+select,
+pre,
+blockquote,
+figure,
+table {
+    margin-bottom: 2rem;
+}
+
+input[type="submit"].btn--primary,
+input[type="reset"].btn--primary {
+    background: #84be5b;
+    border-color: #84be5b;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    line-height: 5.6rem;
+    padding: 0 3.2rem;
+    margin: 0 0.4rem 1.6rem 0;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 4px;
+    background-color: #d3d3d3;
+    border: 0.2rem solid #d3d3d3;
+}
+
+.textarea {
+    min-height: 25.6rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .h-full-width {
+            width: 100%;
+        }
+    .add_comment {
+        margin-left: 0rem;
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .add_comment {
+            margin-left: 5rem;
+            /* margin-right: 2rem; */
+        }
+}
+
+/* extra large devices */
+@media only screen and (min-width: 1200px) {
+    .add_comment {
+            margin-left: 5rem;
+            /* margin-right: 2rem; */
+        }
+}
